@@ -3,4 +3,4 @@ osx_image: xcode11.2
 xcode_project: StringCalculator.xcodeproj
 xcode_scheme: StringCalculator
 xcode_sdk: iphonesimulator13.0
-script: xcodebuild -project StringCalculator.xcodeproj -scheme StringCalculator -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+script: xcodebuild -project StringCalculator.xcodeproj -scheme StringCalculator -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO build test
