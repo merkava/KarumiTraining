@@ -15,6 +15,7 @@
 		18BB8418237ABB5700AA1154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BB8416237ABB5700AA1154 /* LaunchScreen.storyboard */; };
 		18BB8423237ABB5700AA1154 /* StringCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB8422237ABB5700AA1154 /* StringCalculatorTests.swift */; };
 		18BB842E237ABB5700AA1154 /* StringCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB842D237ABB5700AA1154 /* StringCalculatorUITests.swift */; };
+		18BB843C237ACAE400AA1154 /* StringCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB843B237ACAE400AA1154 /* StringCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		18BB8429237ABB5700AA1154 /* StringCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BB842D237ABB5700AA1154 /* StringCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCalculatorUITests.swift; sourceTree = "<group>"; };
 		18BB842F237ABB5700AA1154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BB843B237ACAE400AA1154 /* StringCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				18BB8416237ABB5700AA1154 /* LaunchScreen.storyboard */,
 				18BB8419237ABB5700AA1154 /* Info.plist */,
 				18BB8413237ABB5700AA1154 /* Preview Content */,
+				18BB843B237ACAE400AA1154 /* StringCalculator.swift */,
 			);
 			path = StringCalculator;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			files = (
 				18BB840C237ABB5600AA1154 /* AppDelegate.swift in Sources */,
 				18BB840E237ABB5600AA1154 /* SceneDelegate.swift in Sources */,
+				18BB843C237ACAE400AA1154 /* StringCalculator.swift in Sources */,
 				18BB8410237ABB5600AA1154 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

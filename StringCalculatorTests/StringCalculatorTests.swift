@@ -30,5 +30,12 @@ class StringCalculatorTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testIfSendingEmptyStringTestReturnZero() {
+        let sut = StringCalculator()
+        let result = sut.add(number:"")
+        
+        XCTAssertEqual(0, result)
+    }
 
 }
