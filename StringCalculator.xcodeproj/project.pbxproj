@@ -437,7 +437,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"StringCalculator/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4DWNK4MCTP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = StringCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -459,7 +459,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"StringCalculator/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4DWNK4MCTP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = StringCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
