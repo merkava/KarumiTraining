@@ -1,2 +1,0 @@
-# KarumiTraining
-training
