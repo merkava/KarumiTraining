@@ -1,5 +1,4 @@
 language: swift
 osx_image: xcode11.2
-xcode_project: StringCalculator.xcodeproj
-xcode_scheme: StringCalculator
-platform: iOS Simulator,OS=13.2,name=iPhone 11 Pro Max
+script:
+  - xcodebuild -project StringCalculator.xcodeproj -scheme StringCalculator build test
