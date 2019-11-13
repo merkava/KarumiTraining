@@ -31,11 +31,66 @@ class StringCalculatorTests: XCTestCase {
         }
     }
     
-    func testIfSendingEmptyStringTestReturnZero() {
+//    func testIfSendingEmptyStringTestReturnZero() {
+//        let sut = StringCalculator()
+//        let result = sut.add(number:"")
+//
+//        XCTAssertEqual(0, result)
+//    }
+//
+//    func testIfSendingOnlyOneNumberThatNumberIsReturned() {
+//        let sut = StringCalculator()
+//        let result = sut.add(number:"11")
+//        XCTAssertEqual(11, result)
+//
+//        let result2 = sut.add(number: "33453")
+//        XCTAssertEqual(33453, result2)
+//    }
+//
+    private let scenarios: [(input: String, expectedResult: Int)] = [("", 0), ("0", 0), ("2", 2), ("1,3", 4), ("1 ,3", 4)]
+    
+    private let negScenarios: [(input: String, expectedResult: Int)] = [("-2, 1", 0)]
+    
+    func testIfSendingMultipleNumbersTheyAreAddedAndReturned() {
         let sut = StringCalculator()
-        let result = sut.add(number:"")
+        for test in scenarios {
+            do {
+                let result = try sut.add(number:test.input)
+                XCTAssertEqual(test.expectedResult, result)
+            } catch {
+                //Grats
+            }
+        }
         
-        XCTAssertEqual(0, result)
+    }
+    
+    func testNegativeValues() {
+        let sut = StringCalculator()
+        for test in negScenarios {
+            do {
+                let result = try sut.add(number:test.input)
+                XCTAssertEqual(test.expectedResult, result)
+            } catch ErrorsToThrow.negativeNumber {
+                //Grats
+            } catch {
+                //more grats
+            }
+        }
+    }
+    
+    func testNegativeValues2() {
+        let sut = StringCalculator()
+        for test in negScenarios {
+            XCTAssertThrowsError(try sut.add(number:test.input))
+//            do {
+//                //let result = try sut.add(number:test.input)
+//                XCTAssertThrowsError(try sut.add(number:test.input))
+//            } catch ErrorsToThrow.negativeNumber {
+//                //Grats
+//            } catch {
+//                //more grats
+//            }
+        }
     }
 
 }
